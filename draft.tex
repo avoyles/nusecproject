@@ -105,6 +105,22 @@
 %   \markboth{#1}{}}
 }
 
+\fancypagestyle{fancy2}{
+% \lhead{\nouppercase{\rightmark}}
+ \lhead{\rightmark}
+ \chead{}
+  \rhead{}
+%   \lfoot{\thechapter\ \ \ \nouppercase{\leftmark} }
+  \lfoot{\thechapter\ \ \ \MakeUppercase{\leftmark} }
+  \cfoot{}
+  \rfoot{\thepage}
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+
+%   \renewcommand{\chaptermark}[1]{%
+%   \markboth{#1}{}}
+}
+
 
 \pagestyle{fancy}
 % \lhead{\nouppercase{\rightmark}}
@@ -331,8 +347,14 @@ elit.}
 \end{titlepage}
 \pagenumbering{arabic}
 
+\pagestyle{fancyTOC}
+
+
 \tableofcontents
-\thispagestyle{fancyTOC}
+% \thispagestyle{fancyTOC}
+\pagestyle{fancyTOC}
+
+
 
 
 \listoffigures
@@ -345,13 +367,38 @@ elit.}
 \newpage
 
 
+\pagestyle{fancyacronym}
 
 \chapter*{List of Acronyms}
-\thispagestyle{fancyacronym}
+\pagestyle{fancyacronym}
 
 AQI -  al-Qaeda in Iraq
 
+DDA - Department of Disarmament Affairs
+
 DHS - Department of Homeland Security
+
+DIA - Defense Intelligence Agency
+
+DoD - Department of Defense
+
+DOS - Department of State
+
+FBI - Federal Bureau of Investigation
+
+FBIS - Foreign Broadcast Information Service
+
+GA - General Assembly
+
+GEOINT - Geospatial Intelligence
+
+HUMINT - Human-Source Intelligence
+
+IC- Intelligence Community
+
+IMINT - Imagery Intelligence 
+
+IAEA - International Atomic Energy Agency 
 
 ISI - Islamic State of Iraq
 
@@ -359,15 +406,45 @@ ISIL - Islamic State of Iraq and the Levant
 
 ISIS - Islamic State of Iraq and Syria
 
+ISOO - Information Security Oversight Office
+
+NASIC - National Air and Space Intelligence Center 
+
 JTWJ - Jama'at al-Tawhid wal-Jihad 
 
-LLNL -  Lawrence Livermore National Laboratory
+LLNL - Lawrence Livermore National Laboratory
+
+MASINT - Measurement and Signature Intelligence 
+
+NSC - National Security Council  
+
+NGA - National Geospatial-Intelligence Agency 
+
+NRO - National Reconnaissance Office
+
+NPT - Non-Proliferation Treaty
+
+NSA -National Security Agency
+
+ODNI - Office of the Director of National Intelligence
+
+OSINT - Open-Source Intelligence
 
 RDD - Radiological Dispersal Device
 
+SC- Security Council
+
+SIGINT - Signals Intelligence 
+
 SNM - Special Nuclear Material
 
+UN - United Nations
 
+WMD - Weapons of Mass Destruction
+
+\newpage
+
+\pagestyle{fancy2}
 
 
 \chapter{Executive Summary}
@@ -531,19 +608,23 @@ These low-probability, high-consequence events and any potential preventative po
 
 \section{What this report will focus on}
 
-\subsection{?????? Merge with below ??????? }
+This  report will evaluate and discuss the ability of  ISIL to engage in nuclear terrorism, so as to inform a policy statement to be enforced by the US. This report considers the capability and resources of other sovereign powers and terrorist organizations when those may benefit ISIL. This policy statement details an organized response to any step ISIL may make towards the deployment of a device containing special nuclear material (SNM). It stops short of a larger policy directed towards  the Administration's goal to degrade and ultimately destroy ISIL. 
+
+The scope of this  report is limited to the materials, signatures, and means of detection for those signatures, in all phases during the development and delivery of a nuclear device. 
+
+This  report is directed towards the immediate response to development of the nuclear capabilities of ISIL, and does not consider the consequences which might result if ISIL were to evolve into a permanent state. This  time scale greatly reduces the possibility that ISIL possesses the infrastructure necessary to produce SNM or to assemble such material into a functioning warhead, unless they capture territory containing existing infrastructure. Due to the extreme sophistication in the triggering device, the development of fusion weapons is very unlikely in the time window considered. Rather, emphasis is placed on diverting existing SNM from existing global stockpiles.
+
+It must be considered that ISIL may orchestrate the delivery and detonation of a fission weapon or RDD without any of the material or components passing through territory which is directly controlled by ISIL. In this scenario, the search for SNM is a global concern, and the problem of detection and interception of such weapons or the orders to carry out such attacks is one which the international community must work together to address. 
+
+
 
 \section{Limitations and assumptions of this report (group 1)}
 
 \subsection{?????? Julie working on this section ?????}
 
-% This  report will evaluate and discuss the ability of  ISIL to engage in nuclear terrorism, so as to inform a policy statement to be enforced by the US. This report considers the capability and resources of other sovereign powers and terrorist organizations when those may benefit ISIL. This policy statement details an organized response to any step ISIL may make towards the deployment of a device containing special nuclear material (SNM). It stops short of a larger policy directed towards  the Administration's goal to degrade and ultimately destroy ISIL. 
-% 
-% The scope of this  report is limited to the materials, signatures, and means of detection for those signatures, in all phases during the development and delivery of a nuclear device. 
-% 
-% This  report is directed towards the immediate response to development of the nuclear capabilities of ISIL, and does not consider the consequences which might result if ISIL were to evolve into a permanent state. This  time scale greatly reduces the possibility that ISIL possesses the infrastructure necessary to produce SNM or to assemble such material into a functioning warhead, unless they capture territory containing existing infrastructure. Due to the extreme sophistication in the triggering device, the development of fusion weapons is very unlikely in the time window considered. Rather, emphasis is placed on diverting existing SNM from existing global stockpiles.
-% 
-% It must be considered that ISIL may orchestrate the delivery and detonation of a fission weapon or RDD without any of the material or components passing through territory which is directly controlled by ISIL. In this scenario, the search for SNM is a global concern, and the problem of detection and interception of such weapons or the orders to carry out such attacks is one which the international community must work together to address. 
+
+
+This policy recommendation is oriented primarily towards responding and preventing ISIL nuclear capabilities. The scope encompasses strategic communication within the intelligence community as well as among the U.S and potential countries and international entities and military capability. In the interest of time, this recommendation will not consider collaboration on information gathering or post-detonation. The following policy initiative will focus on developing an integrated intelligence strategy. 
 
 \section{Scoping and problem - kind of summary and set framework for rest of report}
 
@@ -734,31 +815,9 @@ There are two main designs for fission weapons:  gun-type and  implosion-type. I
 
 \section{Intelligence }
 
-\subsection{?????  This entire section has TERRIBLE grammar, very few references still, and much of sounds like it has been directly copy and pasted from Wikipedia. We need to have a serious chat with the Intel team during class   ??????????}
-
-
 \subsection{Introduction}
 
-The current threat of ISIL provides a momentous opportunity for the intelligence community to adapt to the political environment and improve upon the weaknesses in intelligence analysis. The intelligence community consists of sixteen distinct organizations managed by the Office of the Director of National Intelligence. Central to the U.S ability to deter ISIL from acquisitions of nuclear materials is to develop an effective intelligence strategy. This report will concentrate on the overcoming the complexities in regards to the organizational structure of information sharing. The policy recommendation is a two-pronged strategy that addresses intelligence sharing and analysis on both the  domestic and international aspects. The goal for the intelligence community is to foster efficient coordination by improving the flow of information among intelligence organizations, changing the \enquote{need-to-know} basis culture of information sharing, and promoting integration across the organizations to provide time-pertinent. In terms of the international side, the policy will revolve around identifying countries and international bodies the U.S is willing to share information with and to what extent the parties will be involved in the process of intelligence analysis and policy formation.
-
-
-\subsection{Limitations and Scope}
-
-This policy recommendation is oriented primarily towards responding and preventing ISIL nuclear capabilities. The scope encompasses strategic communication within the intelligence community as well as among the U.S and potential countries and international entities and military capability. In the interest of time, this recommendation will not consider collaboration on information gathering or post-detonation. The following policy initiative will focus on developing an integrated intelligence strategy. 
-
-\subsection{Approach}
-
-The premise of our policy initiative stems from the ability of the intelligence community to gather certain information. The assumption is that the intelligence community has the following reconnaissance tools at its disposal: radar, traditional and overt clandestine human sources, satellites, aircrafts and ship signals \cite{Richelson2011}. This yields knowledge about the key primary, secondary and tertiary players involved, insight into the ideology and organization of ISIL, who its main leaders are, entities that might be providing it with economic or military aid, how they can acquire nuclear material and from whom, how they will deliver the weapons, and what their targets will be. 
-
-From a national aspect, we will use 9/11 as a case study to understand the shortcomings of U.S intelligence agencies in the counterterrorism effort and how to best prevent those problems from occurring with ISIL. Furthermore, the factors considered in determining the level of cooperation and the nature of an intelligence partnership between US and other countries include the historical relationships between both parties, the country’s relationship to ISIL, its military and intelligence capability, and its vulnerability and geographical proximity to ISIL. On the other hand, the role of international entities is gauged by the organization’s functions, credibility, and past success in relaying information and promptly responding to crises. 
-
-\subsection{Weak links in the Intelligence Community}
-
-Currently, there are cultural and organizational factors that are hindering facilitating strategic communication between U.S intelligence agencies.  Prior to 9/11, U.S intelligence agencies operated on the culture of a \enquote{need-to-know} basis, which implied that agencies were given discretion in sharing what they perceived to be important \cite{McConnell2008}. In the context of the ISIL threat, this means that agencies lack competitive analysis and that personal biases remained unchecked. Furthermore the failure of the agencies can be attributed to the bureaucratic nature of the organization as well as the lack of a single database of information. The division between individual agencies render them incapable of accessing,  prioritizing, translating analyzing and relaying the information for the policymakers to respond to. As a result, information flow is hindered because each agency has its own networks and databases and interacts minimally with other agencies.  Agencies’ tendencies to stick to procedures and routines hinders their ability to change or implement new ideas. For example, the CIA’s culture of risk aversion in the 1990s were detrimental to its intelligence capabilities and prevented them from properly assessing and taking action against the rising threat of terrorism \cite{Zegart2005}.
-
-\subsection{Policy Solution}
-
-The best means of counteracting this fragmentation is to develop a more integrated system with the ODNI at the helm of this  centralized structure. The Office of the Director of National Intelligence should be allowed more authority to dictate the management of information across agencies.  To increase the coordination and familiarity with other agencies in the intelligence community, personnel should do rotations in each of the agencies. This way, it promotes cross-agency relationships and personnel become better equipped at sharing and comparing methods of collecting and analyzing information.  Agencies should be less structured on rules and regulations and instead focus on how to best adapt to changing circumstances. A combination of minimal oversight and conflicting missions due the independent nature of these agencies \cite{Zegart2005} require that ODNI implement a uniformity of standards to decrease costs and simplify the flow of information. 
+The IC consists of sixteen distinct organizations managed by the Office of the Director of National Intelligence (ODNI) as depicted in \autoref{fig:structure_infographic}. These distinct organizations with divergent and overlapping capabilities, interests, and charters, can make a coordinated assessment of a dynamic threat like ISIL difficult. An overview of the IC and intelligence collected is provided in \autoref{app:intel}. Similar to the intelligence community (IC) reorganization following the 9/11 attacks and recommendations of the 9/11 Commission, the current threat of ISIL provides an opportunity for the IC to adapt to a dynamic threat environment and improve upon the weaknesses in IC structure and capabilities \cite{Kean2004}. Central to the U.S ability to deter ISIL from acquisitions of nuclear materials is an effective intelligence strategy to identify threats and guide response actions. 
 
 \begin{figure}[h]
  \centering
@@ -767,64 +826,33 @@ The best means of counteracting this fragmentation is to develop a more integrat
      \label{fig:structure_infographic}
 \end{figure}
 
+A basic assumption in our policy initiative is the ability of the IC to gather information through the use of radar, traditional and covert human sources, satellites, aircrafts, and ship signals \cite{Richelson2011}. This yields knowledge about the key primary, secondary and tertiary players involved, insight into the ideology and organization of ISIL, entities that might be providing it with economic or military aid, and operational details for the employment of a NW.
 
-\subsection{Strategic Communication in the International World}
+From the U.S. perspective, 9/11 serves as a case study to understand the shortcomings of IC, subsequent recommended changes, and possible shortcomings facing the IC with respect to ISIL. The 9/11 Report found that there are cultural and organizational factors that hinder strategic communication between U.S intelligence agencies (See \autoref{app:partners} for a disucussion on strategic communication on the international level, which also applies at the interagency level).  Prior to 9/11, U.S intelligence agencies operated in a culture dominated by \enquote{need-to-know}, which implied that organizations were given discretion in sharing data \cite{McConnell2008}. In the context of a dynamic ISIL threat, this means that agencies often have static analyses formed from an incomplete picture and lacking a competing analysis derived from the same data. The divisions between individual agencies render them incapable of accessing, prioritizing, translating, analyzing, and relaying the information for the policymakers to respond to in a timely manner. As a result, information flow is hindered by each agency's networks and databases lacking protocols to interact with other agencies' networks and databases.  Organizational inertia, standard operating procedures, and guidelines hinder the ability to change or implement new ideas. For example, the CIA’s culture of risk aversion in the 1990s was detrimental to its intelligence capabilities and prevented them from properly assessing and taking action against the rising threat of terrorism \cite{Zegart2005}.
 
-Strategic communication increasingly become important especially with the advent of globalization and interconnectivity (borderless world) that led to rising threats from ‘transnational’ issues. Security challenges no longer come in lone tangible entity instead its effect is dispersed –into gray areas, there are no longer one right thing or one wrong thing, but everything is connected and effecting each other. Hence, strategic communication hoped to solve an all-encompassing problem of our current security environment.
+The situation is only complicated when considering international intelligence agencies and the sharing of data. To simplify the problem, the factors considered in determining the level of cooperation and the nature of an intelligence partnership between US and other countries were distilled down to the historical relationships between both parties, the country’s relationship to ISIL, its military and intelligence capability, and its vulnerability and geographical proximity to ISIL. The role of international entities is gauged by the organization’s functions, credibility, and past success in relaying information and promptly responding to crises.  These factors are further described in \autoref{app:intel}. 
 
-Communications or exchanges of information (intelligence sharing) can be on the multilateral or bilateral level. Both aspects have its pros and cons. By cooperating in multilateral level, sources of intelligence can be diversified and inter-dependency on one another become less. Multilateralism give high advantage to smaller countries with lesser bargaining power, by working together these countries can be more effective in tackling various issues of concern. On the other hand, when cooperating on the multilateral level, we are talking about a complex system, that requires organization and structure. In multilateralism, coordination become difficult because of higher number of stakeholders, it is also less secure (affecting confidentiality and sensitive materials shared in the open).
+Using the guidance in \autoref{app:intel}, a framework can be developed for information exchange between countries: 
 
+\begin{itemize}
+  \item \textbf{Level 1:} US should install open information sharing with the countries in category one. During WWII, US and Great Britain had joint research of the atomic bomb. This cooperation can be repeated for actions against ISIL.
+  \item \textbf{Level 2:} Information sharing with category two countries should be limited to low and medium security information (see \autoref{app:intel} for further description).  
+  \item \textbf{Level 3:} The U.S. should consider to have limited information sharing of low importance security information with category three countries.  
+\end{itemize}
 
-The US sees merits in pursuing both multilateral and bilateral effort in communications. In bilateral level, both sides can be more specific in its efforts i.e. more tailored agreements. Bilateralism will be effective if a big influential state wants control over small states from a liberalism perspective, because building a series of bilateral arrangements with small states can make a big power’s ability to influence maximized. However, bilateral cooperation has its downside, it can be more wasteful in transactions costs than in the multilateral strategy. It can be less reliable because of dependency on one source. Troublingly, it can also be used as barter materials between the two countries.
+Several international organizations and treaties are in place to facilite communication flow and prevent the spread of nuclear weapons and technology (see \autoref{app:partners}).  However, communication in these organizations organization can be a challenge, and most of the current infrastructure is designed towards state actors, not the current ISIL threat.  Although not a specific alliance against ISIL or nuclear terrorism, the five eyes agreement (see \autoref{app:intel}) can provide valuable intelligence on possible nuclear activities that ISIL may engage. This group is stable, efficient, and more nimble in intelligence collaboration than the existing international non-proliferation structure.  
 
+\section{Military Capability}
 
-However, most of the times, the US tend to favored intense bilateralism over multilateralism, rather than going it alone or going it with others on a specific issues, the US usually opted for intensive one-on-one relationships with handpicked countries that can maximized the US capacity to achieve its objectives.In the wake of the World War II and during the Cold War, multilateral initiatives of the international nuclear nonproliferation and  disarmament increased in significance.
+\subsection{????? No substance for capabilities or much on current coalition efforts - Needs addressed.  Only need a little more in this section, but a more thorough overview of relevant capabilities should be in an appendix ?????}
 
+More than 60 countries have joined the \enquote{global coalition to degrade and defeat ISIL.} The member countries can choose their method and level of participation. Saudi Arabia trains and equips Syrian opposition forces. Jordan’s key role will be intelligence acquiring and sharing. Germany, France, and the United Kingdom are conducting airstrikes. 
 
-Established in 1945, the United Nations (UN) is the largest international organization that can take actions on the issues of security in a global level. In particular, the divisions in the UN that address nuclear security issues are the General Assembly, the Security Council, and the Department of Disarmament Affairs (DDA). General Assembly can make recommendations to Member States and the Security Council, and it can inform the Security Council about situations that are likely to endanger international peace and security based on the recommendation of disarmament and International Security Committee. 
+The number of countries in the coalition is growing with Obama’s campaign, but the bar for inclusion is fairly low. While many countries have committed military capabilities to combatting ISIL, some countries join the coalition by merely declaring their intent to contribute. All these member countries don’t share the same understanding of whom the real enemy is - ISIL or the Syrian regime led by President Bashar al-Assad. For example, Turkey has urged the coalition to topple the Assad regime as a condition to provide its air bases to carry out attacks against ISIL. 
 
+\subsection{????? I don't know what to do with this section.  It covers several area, makes unsubstantiated claims, and doesn't really coherently address the coalition or military capabilities.  I think this needs rewritten and focused.  Statements such as "the country [UK] is extra vulnerable to terrorist attacks on its nuclear installations" needs a reference and doesn't belong in this section (Perhaps an Appendix and a reference to that appendix in section 2.3.  Topic of discussion is bracketed ?????}
 
-The Security Council consists of five permanent members (China, France, Russia, United Kingdom, and United States) and 10 non-permanent members. In order to promote the establishment and maintenance of international peace and security with the least diversion for armaments of the world's human and economic resources, the Security Council shall be responsible for formulating, with the assistance of the Military Staff Committee, plans to be submitted to the Members of the United Nations for the establishment of a system for the regulation of armaments.” The Military Staff Committee advises and assists the Security Council in maintaining international peace and security.
-
-\subsubsection{????????   There is a weird double end quote above here with out a starting quote. Hard to figure out where their block quote beigns and ends ??????????????? }
-
-
-The Department on Disarmament Affairs (DDA) provides substantive and organizational support to UN Member States for disarmament norm-setting through the work of the General Assembly and the First Committee, and other bodies. The DDA’s Weapons of Mass Destruction Branch supports multilateral efforts to strengthen the international norm on disarmament and non-proliferation of weapons of mass destruction and cooperates with other UN agencies, such as the International Atomic Energy Agency (IAEA).
-
-
-The nuclear Non-Proliferation Treaty (NPT), and the Comprehensive Nuclear-Test-Ban Treaty (CTBT) was established by the Conference on Disarmament(CD). The Preparatory Commission of the Comprehensive Nuclear-Test Ban Treaty Organization (CTBTO) \cite{Affairs2008} was created in 1996 to facilitate the Comprehensive Nuclear-Test-Ban Treaty (CTBT) Treaty’s entry into force and develop the International Monitoring System (IMS) and the International Data Centre. The CTBTO also proposed Fissile Materials Cut-Off Treaty (FMCT) to prohibit the production of low-enriched uranium and plutonium, two main material for nuclear weapon. However, this negotiation has been held for years without significant breakthrough.
-
-
-The International Atomic Energy Agency was established in 1957, with the aim of promoting use of nuclear energy for peaceful uses through safeguards \cite{InternationalAtomicEnergyAgency}.  IAEA maintains the legal framework and technical capabilities to establish and verify the safeguards agreements with Non-Proliferation Treaty member states. IAEA is authorized to conduct inspections of a NPT member country’s declared and undeclared nuclear facilities.  If a state is caught in non-compliance with its safeguards agreements, the Board of Governors has the right to ask for more information and may refer it to the UN Security Council for further action. However, the power of IAEA is limited to the countries that have signed NPT and the scope of inspection is limited as defined in the safeguard agreement. 
-
-
-While these formal international treaties and agreements have been cornerstones in nuclear non-proliferation, communication in complex organization is challenge.  The time it takes to propose, prepare and enforce an international treaty is too long for imminent threat from ISIL. 
-
-
-\subsection{Agreements Versus Formal Agreements}
-
-These Informal cooperation can also be informal agreements between countries. As formal agreements require consensus on treaties etc, which can draw out long and extensive process, cooperation can be based on mutual trust and understanding. However, there is higher risk in making informal arrangement than inking it formally. 
-
-\subsection{Five Eyes}
-
-A good example of informal multilateral agreement is the United Kingdom – United States of America Agreement for cooperation in intelligence gaining between five English-speaking democracies: the United Kingdom, the United States, Canada, Australia and New Zealand \cite{Cox2012}. The collaboration began during World War II to track Germany and Russia’s signals and activities and endured for 70 years. The agreement enables the members to share intelligence facilities, avoid duplication and combine strength. The US and the UK has the most advanced technical abilities and the biggest budget and are main players in the alliance. The US operates intelligence centers in allied’ countries: one of the world’s largest eavesdropping centers in British is run by NSA with hundreds of British employees from the Government Communications Headquarters (GCHQ); Pine Gap, a satellite tracking station in Australia, is run Partly run by the U.S. Central Intelligence Agency (CIA), U.S. National Security Agency (NSA) and U.S. National Reconnaissance Office (NRO). The agencies work side-by-side, allowing information flow quickly. They also regularly meet to discuss shared concerns and approaches. The members of the alliance also work with foreign intelligence to obtain local information without letting them into the alliance. Only U.S. intelligence officers can directly access the database, other country members has to show potential link to U.S. security threat to the information they request if they need some information from the database. All members have benefited from information sharing. US and UK prevented a major attack in 2006, the transAtlantic liquid bomb plot to explode about 10 airliners from UK to US and Canada. Australia convicted terrorist with the information from the five eyes. Although not a specific alliance against ISIL or nuclear terrorism, the five eyes can provide valuable intelligence on possible nuclear activities that ISIL may engage. This group is stable and efficient in intelligence collaboration. 
-
-\subsection{US Led Coalition Against ISIL}
-
-\subsubsection{????????   There are still no references after this point ?????????????}
-
-More than 60 countries have joined the \enquote{global coalition to degrade and defeat ISIL.} The member countries can choose their ways of participation.  Saudi Arabia trains and equips Syrian opposition forces, Jordan’s key role will be intelligence acquiring and sharing. Germany, France and United Kingdom are conducting airstrikes in Iraq. 
-
-The number of countries in the coalition is growing with Obama’s campaign, but the bar for inclusion is fairly low. While many countries have send military capabilities to ISIL, carrying out air-strikes, some countries got their membership by merely declaring their intent to contribute. All these member countries don’t share the exactly same understanding of whom the real enemy is-the ISIL or the Syrian regime led by President Bashar al-Assad. Turkey has urged the coalition to topple the Assad regime as a condition to provide its air bases to carry out attacks against ISIL. 
-
-\subsection{Role of Countries}
-
-As ISIL calculates and plans its foothold in placing itself in the global landscape, the US has identified a number of collaborative strategies in decelerating ISIL’ effort. Besides using the current intelligence interoperation within the US intelligence community, as well as joint effort within various existing international body, the US may find it beneficial to work bilaterally with a number of US allies and emerging partners.
-
-As ISIL carving its traction in Iraq and Syria, the two countries become an immediate concern for help by the US. Strengthening Iraq and Syria could be among the first line of defense against ISIL. As US has an improving bilateral relations with Iraq, Iraq become an easier partner for US to work with in reigning ISIL. The Strategic Framework Agreement for a Relationship of Friendship and Cooperation between the US and the Republic of Iraq guides the overall political, economic, cultural, and security ties with Iraq.  This agreement is designed to help the Iraqi people stand on their own and reinforce Iraqi sovereignty, while protecting US interests in the Middle East. 
-
-However, the country’s relation with Syria is not black-and-white as we would like it to be. The US-Syria relationship is negative after having suspended diplomatic relations in 2014. The US has also imposed economic sanction to Syria since 2004 due to the country’s involvement in harboring terrorist groups and the meddling of Lebanon’s political affairs including the assassination of Lebanese Prime Minister Rafik Hariri. The US deeply opposed to the ongoing Syrian Civil war and President Bashar al-Assad’s regime, specifically regarding the country’s use and stockpile of chemical and biological weapons. The US has floated the idea to train the Syrian military opposition, and even considering to train the Syrian military itself in order to fight ISIL, nevertheless, President Assad viewed the proposal as infringing on their country’s sovereignty. Despite the two countries differences, they actually both share a common enemy, and it is hope this fact can be harnessed to US’ advantage.
-
+\subsection{????? From here... ?????}
 The possibility of ISIL acquiring nuclear weapons means a stronger monitoring of nuclear-capable countries is needed. At the moment, only two handfuls of countries that have that capability. 
 
 UK and France have been US’ allies even since the country launched its global fight against terrorism after the 9/11 incident. Hence, the US can expect UK specifically to be its closest ally in preventing ISIL’ nuclear terrorism effort. The two countries \enquote{special relationship} dated back to Churchillian era means that the US can usually count on the UK for mutual support, especially considering ISIL’ threats to the country is very high. UK has been ISIL’ main target for terrorist attacks, and given UK’s nuclear capability, the country is extra vulnerable to terrorist attacks on any of its nuclear installations. So far, UK has joined US-led coalition against ISIL, nevertheless, prospect for bilateral cooperation between the two countries cannot be disregarded.
@@ -848,158 +876,26 @@ The US may find other allies in the Middle East region, however, the region is d
 
 The US can find allies in European countries as well, as the region is facing \enquote{recruitment} threats from ISIL. Thousands of Europeans have been recruited by ISIL to fight jihad cause in ISIL’ territories. ISIL is also setting up bases in a number of European countries, expanding its influence beyond the Middle East region. The US can identify these countries and create cooperation efforts in order to effectively eliminate ISIL.
 
+\subsection{????? ...to here. ?????}
 
 
-\subsection{Categories of Information and Priorities}
-
-\subsubsection{?????? I dont like the intel.gov reference, it is very weak relative to a more scholarly source ???????}
-
-Intelligence agencies gather information from physical and technical observations, conversations, searches and human operations. These information come from intelligences such as Signals (SIGINT), Imagery (IMINT), Measurement and Signature (MASINT), Human-Source (HUMINT), Open-Source (OSINT) and Geospatial (GEOINT) \cite{Intelligen}. The National Security Agency (NSA) is responsibility for the SIGINT. Basis of SIGINT lies on signal communications between people, between machines and/or combination of both. National Geospatial-Intelligence Agency is responsible for all activities of IMINT: image gathering, analyzing, usage and distribution. Image information can be collected from the visual devices such as cameras, radars, lasers and others. MASINT is technically and scientifically based intelligence on unique attributes of the desired target. MASINT is the part of the Defence Intelligence Agency (DIA), and can be used to recognize, find location and describe the target by using nuclear, seismic, acoustic, material, radio frequency and/or optical sciences. DOS, CIA, DOD, FBI and other agencies use HUMINT. HUMINT activities more known as spionage in enemy territory. Gathering data can in photography, document or any other type of information. OSINT uses information that available publicly. Foreign Broadcast Information Service and National Air and Space Intelligence Center widely use OSINT. GEOINT belongs to the National Geospatial-Intelligence Agency (NGA). Data from GEOINT can be received from satellites, recon aircrafts or by other methods such that data have location. GEOINT is used to support soldiers on battlefield and as an aid on disaster management.
-
-Information Security Oversight Office (ISOO) determines several Standards for the information classification. ISOO is the branch of the National Archives and Records Administration, but receives plan instructions and policy from the National Security Council. ISOO is in charge of approach and oversight of the extensive security characterization framework and the National Industrial Security Program.
-
-\subsubsection{??????? Unclear reference [10], need more specific citation  ??????}
-[10] Federal Register. "The President”, Part VII 75, 2010
-
-
-ISOO gives next requirements for the information to keep the originality [10]. Information is original, if: information should be classified by the classification authority; information is belongs to, controlled by or for the United States; information refers to one of the Classification categories (defined further); classification authorities determines the damage to the national security from unsanctioned disclosure of the information.  Information classification is already exists in almost all of the countries’ structure. These classes are effective and there is no reason to change this system \cite{Richelson2011}:
-
-\begin{itemize}
-  \item Top secret: \enquote{exceptionally grave damage} to the national security in case of disclosure.
-  \item Secret: \enquote{serious damage} to the national security in case of disclosure.
-  \item Confidential: \enquote{damage} to the national security in case of disclosure.
-  \item Unclassified.
-\end{itemize}
-
-
-Information volume received from the all intelligence types as discussed above is astronomic. However, processing of these information is more complicated. To systemize the information,  they are divided by their importance. These classifications are as low, medium and highly important information:
-
-\begin{itemize}
-  \item \underline{Low (moderately serious)}: (e.g. planning to build weapon: when there is enough time to plan actions to predict turning it to Medium Level).
-  \item \underline{Medium (Very serious)}: (e.g. weapon building in the process: have time, however,actions should be taken asap).
-  \item \underline{High (Catastrophic)}: (e.g. weapon exists, ready to use: time is determining factor, actions should be taken immediately).
-\end{itemize}
-
-Level of secrecy of the information would be set by the authorities who are responsible for the assignment these levels for specific information. Generally, all information might be separated by their minimum security levels depending to their importance. \autoref{tab:separate_sec_level}  shows this separation. 
-
-\subsubsection{?????? No reference for where this information came from  ???????}
-
-
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|l|c|c|c|}
-\hline
-\multicolumn{2}{|c|}{Information Category}           & \multicolumn{3}{c|}{Minimum Security Level}                                                 \\ \hline
-\# & \multicolumn{1}{c|}{Information type}           & \cellcolor[HTML]{34FF34}LOW & \cellcolor[HTML]{FCFF2F}MEDIUM & \cellcolor[HTML]{FE0000}HIGH \\ \hline
-1  & Information about weapon                        & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}X      & \cellcolor[HTML]{FE0000}     \\ \hline
-2  & Information about weapon location               & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}       & \cellcolor[HTML]{FE0000}X    \\ \hline
-3  & Information about target                        & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}       & \cellcolor[HTML]{FE0000}X    \\ \hline
-4  & Information about persons related to the weapon & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}X      & \cellcolor[HTML]{FE0000}     \\ \hline
-\end{tabular}
-\caption{Separation of information by minimum security levels.}
-\label{tab:separate_sec_level}
-\end{table}
-
-
-Even that Low level of security does not have any type information in the table above, during the information analysis in the agency, there might be classification of an information to this group. Low importance and low consequences of the disclosure of the information is the main factors to have information in Low security level group.
-
-In international organization system, information sharing would be more complicated than between internal agencies. As for the US, we need to know which countries are in the alliance against ISIL. Definitely, US has different political relationship with each of them. Therefore, we can assume that information sharing level would be according to that political friendship level. Friendship levels can be divided to the three, in simple system. However, in more complicated system of discussion, these levels can be extended until five. \autoref{tab:relation_table} shows the meaning of each level for the friendship in reference with the US:
-
-\subsubsection{??????  Again, the grammar in this table, like most of this section, is almost impossible to even make sense of. This needs to be seriously addressed.   ??????????}
-
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|l|}
-\hline
-Levels & \multicolumn{1}{c|}{Definition}                                                                                                             \\ \hline
-1      & Historically and current close relationship. For example, Great Britain, France, Canada.                                                    \\ \hline
-2      & \begin{tabular}[c]{@{}l@{}}nor good or bad relations, or last days relationship is decreasing. \\ For example, Germany as neutral [11] and, for decreasing friendship, Israel \cite{Goldberg2014}.\end{tabular} \\ \hline
-3      & historically and currently bad relationship. For example, Russia, Jordan, Turkey, Egypt…[10]                                                  \\ \hline
-\end{tabular}
-\caption{My caption}
-\label{tab:relation_table}
-\end{table}
-
-\subsubsection{????????  This table needs a caption, reference, update ref [10]  ???????}
-
-\subsubsection{?????  A more scholarly reference for US-foreign country relations is needed other than number 11 here, a simple survey    ???????????}
-
-[11]  Stokes, Bruce. "Which Countries Don't like America and Which Do." Pew Research Center RSS. PewResearchCenter, 15 July 2014
-
-This table can be interpreted as for information sharing level related to the ISIL. Highly friendly relationship with the US make easier the information exchange between those countries: 
-
-\begin{itemize}
-  \item \textbf{Level 1:} US might install open information sharing in \enquote{need-to-share} basis with the countries in close friendly relationship. During WWII, US and Great Britain had joint research of the atomic bomb. This cooperation can be repeated for the actions against ISIL.
-  \item \textbf{Level 2:} Information sharing with the countries with whom US do not have nor good or bad political friendship can be limited in Medium security leveled information. In other words, with the neutral relation countries, US might not want to share highly important information but open to share with informations with medium and low important information. The reason of not sharing of highly important information is the high disclosure cost of the information, and the not necessarily need to know of the information for that type countries. 
-  \item \textbf{Level 3:} Limited information sharing level. With the countries that US have bad relationship and that there is less possibility with whom to have successful cooperation like US-G.Britain or US-France, US might decide to have limited information sharing at the level of Low important information. However, in the cases of exceptions that higher leveled information sharing is beneficial for the treatment of ISIL, US agency might allow to share Medium and/or High level of security information with the Level 3 countries.
-\end{itemize}
-
-
-\subsubsection{??????  Again, no reference provided for this very specific information     ?????????}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Strategic Communication} 
-
-\subsection{????? Break off from above ?????}
-
-Break off from above
-
-
-
-\section{Military Capability of responding parties }
-
-\subsection{????? Missing ?????}
-
-Missing
-
-
-
-
-\section{Forensics (Databases, interdicted samples, transfer of knowledge to post-det community)}
-
-           
 \subsection{Post-Detonation Forensics Methods}
 
-Seismic, orbital, air monitoring, soil composition.
+\subsection{????? Need short paragraph discussion on pre-detonation nuclear forensics. ?????}
 
-The goal of post detonation forensics is to determine the design, composition, and origin of a nuclear weapon. 
-
-There exists a distributed network of monitoring stations which measure different signals which would confirm the occurrence of a nuclear detonation. These stations include: over 170 seismic monitoring devices, six underwater (hydroacoustic) and 5 land systems which monitor sound waves, and 60 surface stations which measure infrasound (ultra-low-frequency) \cite{Lane2012}. The location of detonation and the yield of the nuclear device may be estimated from an analysis of these signals. In the hours and days that follow detonation, measurements of the radionuclide composition near the blast zone and in the plume of gas and dust released into the upper atmosphere allow conclusions to be drawn concerning the efficiency of the device, the weight of the fuel (i.e. the level of sophistication), whether the fuel was plutonium or uranium, how the fuel was created, and whether or not DT fusion occurred (based on the known cross-sections of 14 MeV neutrons with the surrounding environment) \cite{Davis2011}. Additionally, there exists a vast orbital infrastructure which monitor for optical, X-ray, gamma-ray, and neutron emission characteristic of nuclear detonations; the exact capabilities of these systems is classified \cite{1446400}. 
+The goal of post detonation forensics is to determine the design, composition, and origin of a nuclear weapon. To assist in the attribution process, there exists a distributed network of monitoring stations which measure different signals which would confirm the occurrence and characteristics of a nuclear detonation. These stations include: over 170 seismic monitoring devices, six underwater (hydroacoustic) and 5 land systems which monitor sound waves, and 60 surface stations which measure infrasound (ultra-low-frequency) \cite{Lane2012}. The location of detonation and the yield of the nuclear device may be estimated from an analysis of these signals. In the hours and days that follow detonation, measurements of the radionuclide composition near the blast zone and in the plume of gas and dust released into the upper atmosphere allow conclusions to be drawn concerning the efficiency of the device, the weight of the fuel (i.e. the level of sophistication), whether the fuel was plutonium or uranium, how the fuel was created, and whether or not DT fusion occurred (based on the known cross-sections of 14 MeV neutrons with the surrounding environment) \cite{Davis2011}. Additionally, there exists a vast orbital infrastructure which monitor for optical, X-ray, gamma-ray, and neutron emission characteristic of nuclear detonations; the exact capabilities of these systems is classified \cite{1446400}. 
 
 \subsection{Timescale for data processing and response}
 
 Reference on Drive: Forensic questions you can answer (in the fission folder).
 
-If nuclear material is intercepted before detonation, an analysis of the enrichment and contaminants may be achieved at the National Labs (Oak Ridge, Los Alamos); on the scale of weeks to months, it is possible to discern the age of the material post fabrication by analyzing the microstructure, activity, and isotopic composition. Immediately following detonation, the timescale of analysis relies on how quickly radiation monitoring equipment may be delivered to the blast site, and how quickly samples may be gathered and shipped back to one of 16 radiological facilities equipped to perform nuclear forensics \cite{1446400}. Airplanes capable of sampling large volumes of the dust and gas (Xenon) in the plume generated by the detonation must be performed within 1-2 days of the detonation and may indicate the composition, efficiency, and sophistication of the device. Analysis of materials taken from the ground near the detonation point will take 1-2 weeks to analyze, and will confirm and refine the findings of atmospheric monitoring. The identification of the origin of the weapon will depend largely on what is presently known about the yield, sophistication, and efficiency of weapons in global stockpiles; what is exactly known of the capabilities of weapons designed outside of the United States is generally classified \cite{Glasstone_1964}. Given quick access to the nuclear blast site and a somewhat thorough understanding of the nuclear capabilities of other sovereign powers, the technical analysis of the origin and design of a nuclear blast would be available within 3-10 days, depending on the availability of data. Ongoing research is aimed at developing LIBS technologies which may reduce the nuclear forensics timeline with rapid (\textless 15 hours) debris dissolutions techniques, or techniques which do not require the dissolution of collected debris \cite{Condron}. 
-
-
-
-
+If nuclear material is intercepted before detonation, an analysis of the enrichment and contaminants may be achieved at the National Labs (Oak Ridge, Los Alamos). On the scale of weeks to months, it is possible to discern the age of the material post fabrication by analyzing the microstructure, activity, and isotopic composition. Immediately following detonation, the timescale of analysis relies on how quickly radiation monitoring equipment may be delivered to the blast site and how quickly samples are gathered and shipped back to one of 16 radiological facilities equipped to perform nuclear forensics \cite{1446400}. Airplanes capable of sampling large volumes of the dust and gas (Xenon) in the plume generated by the detonation must be performed within 1-2 days of the detonation and may indicate the composition, efficiency, and sophistication of the device. Analysis of materials taken from the ground near the detonation point will take 1-2 weeks to analyze and will confirm and refine the findings of atmospheric monitoring. The identification of the origin of the weapon will depend largely on what is presently known about the yield, sophistication, and efficiency of weapons in global stockpiles. What is exactly known of the capabilities of weapons designed outside of the United States is classified \cite{Glasstone_1964}. Given quick access to the nuclear blast site and a somewhat thorough understanding of the nuclear capabilities of other sovereign powers, the technical analysis of the origin and design of a nuclear blast would be available within 3-10 days, depending on the availability of data. Ongoing research is aimed at developing LIBS technologies which may reduce the nuclear forensics timeline with rapid (\textless 15 hours) debris dissolutions techniques, or techniques which do not require the dissolution of collected debris \cite{Condron}. 
 
 
 \section{Detection technologies }
 
+\subsection{????? Recommend developing short (~1 page or less) overview of some of the high level considerations involved in detecting nuclear material, limitations, and current programs.  Place the remainder of the material, basically what is included here, into an Appendix.  Did not grammar review.   ?????}
 
- 
 \subsection{Fission Weapons}
  
    \subsubsection{Passive Signals}
@@ -1208,11 +1104,11 @@ Of the radiation types mentioned: alpha, beta, and gamma, the gamma emitters are
 \begin{figure}[h]
  \centering
  \includegraphics[trim = 0cm 0cm 0cm 0cm, clip,scale=0.5]{./figures/shielding_reqs.jpg}
-   \caption{Schematic representation of the shielding requirements of alpha, beta, and gamma radiation. }
+   \caption{Schematic representation of the shielding requirements of alpha, beta, and gamma radiation \cite{Hallenbeck1994}. }
      \label{fig:shielding_reqs}
 \end{figure}
 
-\subsubsection{????????  This section needs MASSIVE cleaning up, and figure ref was never provided ????????}
+\subsubsection{????????  This section needs MASSIVE cleaning up ????????}
 
 
 
@@ -1227,6 +1123,24 @@ Of the radiation types mentioned: alpha, beta, and gamma, the gamma emitters are
 \section{Logic Trees}
 
 Waiting on Julie
+
+\subsubsection{????????  Orphan Policy Statements, need polishing and integration ????????}
+
+This report will concentrate on overcoming the complexities in the IC organizational structure to facilitate information sharing. The policy recommendation is a two-pronged strategy that addresses intelligence sharing and analysis on both the domestic and international aspects. The goal for the intelligence community is to foster efficient coordination by improving the flow of information among intelligence organizations, changing the \enquote{need-to-know} basis culture of information sharing, and promoting integration across the organizations to provide time-pertinent. In terms of the international side, the policy will revolve around identifying countries and international bodies the U.S is willing to share information with and to what extent the parties will be involved in the process of intelligence analysis and policy formation.
+
+\subsection{Intel Policy Solution}
+
+The best means of counteracting this fragmentation is to develop a more integrated system with the ODNI at the helm of this  centralized structure. The Office of the Director of National Intelligence should be allowed more authority to dictate the management of information across agencies.  To increase the coordination and familiarity with other agencies in the intelligence community, personnel should do rotations in each of the agencies. This way, it promotes cross-agency relationships and personnel become better equipped at sharing and comparing methods of collecting and analyzing information.  Agencies should be less structured on rules and regulations and instead focus on how to best adapt to changing circumstances. A combination of minimal oversight and conflicting missions due the independent nature of these agencies \cite{Zegart2005} require that ODNI implement a uniformity of standards to decrease costs and simplify the flow of information. 
+
+\subsection{Military Policy Solution}
+ 
+As ISIL carving its traction in Iraq and Syria, the two countries become an immediate concern for help by the US. Strengthening Iraq and Syria could be among the first line of defense against ISIL. As US has an improving bilateral relations with Iraq, Iraq become an easier partner for US to work with in reigning ISIL. The Strategic Framework Agreement for a Relationship of Friendship and Cooperation between the US and the Republic of Iraq guides the overall political, economic, cultural, and security ties with Iraq.  This agreement is designed to help the Iraqi people stand on their own and reinforce Iraqi sovereignty, while protecting US interests in the Middle East. 
+
+However, the country’s relation with Syria is not black-and-white as we would like it to be. The US-Syria relationship is negative after having suspended diplomatic relations in 2014. The US has also imposed economic sanction to Syria since 2004 due to the country’s involvement in harboring terrorist groups and the meddling of Lebanon’s political affairs including the assassination of Lebanese Prime Minister Rafik Hariri. The US deeply opposed to the ongoing Syrian Civil war and President Bashar al-Assad’s regime, specifically regarding the country’s use and stockpile of chemical and biological weapons. The US has floated the idea to train the Syrian military opposition, and even considering to train the Syrian military itself in order to fight ISIL, nevertheless, President Assad viewed the proposal as infringing on their country’s sovereignty. Despite the two countries differences, they actually both share a common enemy, and it is hope this fact can be harnessed to US’ advantage.
+
+
+\subsubsection{????????  Orphan Policy Statements, need polishing and integration ????????}
+
 
 \section{Target links in the logic tree}
 
@@ -1564,7 +1478,108 @@ Waiting on Denia?
 
 
 
+
+
+
+\appendix
+\chapter[Appendix A: Intelligence Overview]{Intelligence Overview}  \label{app:intel}
+
+
+\section{Intelligence Collection and Agency Responsibilities}
+
+\subsection{?????????  Generally speaking, this Appendix could use some references ???????????}
+
+Intelligence agencies gather information from physical and technical observations, conversations, searches, and human operations. These sources are grouped into Signals Intelligence (SIGINT), Imagery Intelligence (IMINT), Measurement and Signature Intelligence (MASINT), Human-Source Intelligence (HUMINT), Open-Source Intelligence (OSINT) and Geospatial Intelligence (GEOINT) \cite{Intelligen}. The National Security Agency (NSA) is responsible for SIGINT, and the NSA collects SIGINT using signal communications between people, machines, and combinations of both. National Geospatial-Intelligence Agency (NGA) is responsible for the collection of IMINT using visual collection methods including cameras, radars, lasers, etc. MASINT is technically and scientifically based intelligence on unique attributes of the desired target. MASINT is the part of the Defense Intelligence Agency (DIA) and can be used to recognize, locate, and describe the target through nuclear, seismic, acoustic, material, radio frequency, and optical sciences. The Department of State (DOS), CIA, Department of Defense (DOD), Federal Bureau of Investigation (FBI), and other agencies use HUMINT sources, more commonly known as spies, to gather data via photography, document transfer, information download, etc. in enemy territory. OSINT relies on publicly available information, and a large synthesis of OSINT is performed at Foreign Broadcast Information Service (FBIS) and the National Air and Space Intelligence Center (NASIC). GEOINT belongs to the NGA and is generally collected from satellites and recon aircraft. 
+
+\subsection{Information Classification}
+
+The Information Security Oversight Office (ISOO) determines standards for information classification based on policy guidance from the National Security Council (NSC). ISOO has oversight of the extensive security characterization framework and the National Industrial Security Program. ISOO sets requirements for the original classification of information if the following apply: information should be classified by the classification authority; information is belongs to, controlled by, or is for the United States; information refers to one of the classification categories; classification authorities determines damage will be caused to national security from unsanctioned disclosure [10]. The classes of information classification believed to be effective \cite{Richelson2011}.  The general classes of classification are:
+
+\begin{itemize}
+  \item Top secret: \enquote{exceptionally grave damage} to national security in case of disclosure.
+  \item Secret: \enquote{serious damage} to national security in case of disclosure.
+  \item Confidential: \enquote{damage} to national security in case of disclosure.
+  \item Unclassified.
+\end{itemize}
+
+The information volume received from the all intelligence sources is astronomic. To facilitate the handling of this volume of information, assets are assigned based on the prioritization of the information. These prioritizations are as low, medium, and highly important:
+
+\begin{itemize}
+  \item \underline{Low (moderately serious)}: (e.g. planning to build weapon: enough time to plan actions and monitor progress).
+  \item \underline{Medium (very serious)}: (e.g. weapon building in the process: actions should be taken ASAP).
+  \item \underline{High (catastrophic)}: (e.g. weapon exists, ready to use: time is determining factor and actions should be taken immediately).
+\end{itemize}
+
+Combining these classification categories, a set of information and its sensitivity for the ISIL nuclear threat can be generated and is shown in \autoref{tab:separate_sec_level}.  
+
+\subsubsection{?????? Be good to color code according to TS, S, C, or unclassified ???????}
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|l|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{Information Category}           & \multicolumn{3}{c|}{Minimum Security Level}                                                 \\ \hline
+\# & \multicolumn{1}{c|}{Information type}           & \cellcolor[HTML]{34FF34}LOW & \cellcolor[HTML]{FCFF2F}MEDIUM & \cellcolor[HTML]{FE0000}HIGH \\ \hline
+1  & Information about weapon                        & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}X      & \cellcolor[HTML]{FE0000}     \\ \hline
+2  & Information about weapon location               & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}       & \cellcolor[HTML]{FE0000}X    \\ \hline
+3  & Information about target                        & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}       & \cellcolor[HTML]{FE0000}X    \\ \hline
+4  & Information about persons related to the weapon & \cellcolor[HTML]{34FF34}    & \cellcolor[HTML]{FCFF2F}X      & \cellcolor[HTML]{FE0000}     \\ \hline
+\end{tabular}
+\caption{Separation of information by minimum security levels.}
+\label{tab:separate_sec_level}
+\end{table}
+
+\subsection{International Intelligence Sharing}
+
+Information sharing in the international IC is immensely more complicated than between internal U.S. agencies. The mere fact of declared opposition to ISIS is an insufficient basis for intelligence sharing alone.  Indeed, the U.S. various strained relationships with many allies in the fight against ISIL. It is assumed that information sharing on the ISIL issue would fall along lines consistent with historical cooperation levels. Cooperation levels can be divided into a simple system of three levels as shown in \autoref{tab:relation_table}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|l|}
+\hline
+Levels & \multicolumn{1}{c|}{Definition}                                                                                                             \\ \hline
+1      & Historically and currently close relationship (Great Britain, France, Canada)                                                    \\ \hline
+2      & \begin{tabular}[c]{@{}l@{}}Neither good nor bad relations or recent downturn in relations \\ For example: Germany as neutral [11] and Israel as recent downturn \cite{Goldberg2014}.\end{tabular} \\ \hline
+3      & Historically and currently bad relationship (Russia, Jordan, Turkey, Egypt [10])                                                  \\ \hline
+\end{tabular}
+\caption{My caption}
+\label{tab:relation_table}
+\end{table}
+
+\subsubsection{????????  This table needs a caption, reference  ???????}
+
+A good example of informal multilateral agreement amongst level one countries is the United Kingdom – United States of America Agreement for cooperation in intelligence gaining between five English-speaking democracies: the United Kingdom, the United States, Canada, Australia and New Zealand \cite{Cox2012}. The collaboration began during World War II to track German and Russian signals and activities and endured for 70 years. The agreement enables the members to share intelligence facilities, avoid duplication, and combine strength. The US and the UK have the most advanced technical abilities, biggest budgets, and are main players in the alliance. The US operates intelligence centers in allied countries: one of the world’s largest eavesdropping centers in Britian is run by NSA with hundreds of British employees from the Government Communications Headquarters (GCHQ); Pine Gap, a satellite tracking station in Australia, is run Partly run by the CIA, NSA, and U.S. National Reconnaissance Office (NRO). The agencies work side-by-side, allowing information flow quickly. The members of the alliance work with foreign intelligence to obtain local information without letting them into the alliance. Only U.S. intelligence officers can directly access the database; other country members have to show potential links to U.S. security threats for the information they request from the database. All members have benefited from the information sharing. The U.S. and UK prevented a major attack in 2006 designed to use liquid explosives to explode 10 airliners traveling from the UK to U.S. and Canadian desinations. 
+
+
+\chapter[Appendix B: International Partnerships]{International Partnerships} \label{app:partners}
+
+\section{Strategic Communication }
+
+\subsection{????????  This appendix needs references  ???????}
+
+
+Strategic communication became increasingly important with the advent of globalization and interconnectivity (borderless world) that led to rising threats from ‘transnational’ issues. Security challenges no longer come in lone tangible entities, but instead are multi-polar and dispersed into gray areas where there are no clear cut answers, everything is connected, and second order effects must be accounted for. Strategic communication was developed to provide a framework to help solve the multi-polar problem that defines our current security environment.
+
+Communications or exchanges of information (intelligence sharing) can be on the bilateral or multilateral level. Cooperating at the multilateral level diversifies sources of intelligence and increases the confidence in intelligence assessments. Multilateralism disproportionally benefits smaller countries with less bargaining power and resources, but working together with these countries can be effective in tackling issues of concern related to nuclear proliferation that may utilize black markets and networks that reside in their country. On the other hand, multilateral cooperation requires a complex system requiring organization and structure to ensure timely and accurate sharing of information. Additionally, the large number of participants can result in lower security of information thereby affecting the willingness of countries to share confidential and sensitive materials.
+
+At the bilateral level, both sides can be more specific and develop tailored agreements. From a liberalism perspective, bilateralism can help larger states gain control over smaller states through a series of arrangements that maximize the influence of the larger state. However, bilateral cooperation can be more wasteful in time and effort as compared to a multilateral strategy. It can also be less reliable because no international norm is established creating compliance pressure, which can lead to compliance with the agreement becoming a bargaining chip to gain further concessions.
+
+The US sees merits in pursuing both multilateral and bilateral effort in international strategic communications. Most of the times, the US tends to favored intense bilateralism over multilateralism to achieve its objectives. However, following World War II, multilateral initiatives in the area of nuclear non-proliferation and disarmament increased in significance.  This multilateral transition was marked by the creation of the United Nations (UN) in 1945.  The UN, and several subsequent agencies, are the current approach taken by the U.S. to address nuclear proliferation concerns.  
+
+\subsection{Nuclear-Relevant Organizations }
+
+The UN is the largest international organization that can take actions on the issues of security at a global level. Several divisions in the UN address nuclear security issues including the General Assembly (GA), the Security Council (SC), and the Department of Disarmament Affairs (DDA). The GA can make recommendations to Member States and the SC about situations that are likely to endanger international peace and security. The SC consists of five permanent member states (China, France, Russia, United Kingdom, and the United States) and 10 non-permanent members. The Security Council is responsible for formulating plans for the regulation of armaments. The DDA provides substantive and organizational support to UN Member States for disarmament norm-setting through the work of the GA and other bodies. The DDA’s Weapons of Mass Destruction (WMD) Branch supports multilateral efforts to strengthen the international norm on disarmament and non-proliferation of WMD and cooperates with other UN agencies, such as the International Atomic Energy Agency (IAEA).
+
+The IAEA was established in 1957, with the aim of promoting peaceful uses of nuclear energy through safeguards \cite{InternationalAtomicEnergyAgency}. The IAEA maintains the legal framework and technical capabilities to establish and verify the safeguards agreements with Non-Proliferation Treaty (NPT) member states. IAEA is authorized to conduct inspections of a NPT member country’s declared and undeclared nuclear facilities. If a state is caught in non-compliance with its safeguards agreements, the Board of Governors has the right to ask for more information and may refer it to the UN Security Council for further action. However, the power of IAEA is limited to the countries that have signed NPT, and the scope of inspection is limited as defined in the safeguard agreement. 
+
+
+
 \newpage
+\pagestyle{fancyTOC}
+
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{ieeetr}
