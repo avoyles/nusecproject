@@ -1,0 +1,10 @@
+/draft.out
+/draft.lot
+*.bbl
+*.aux
+*.blg
+*.lof
+*.log
+*.synctex.gz
+*.toc
+*.pdf
