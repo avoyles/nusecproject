@@ -705,6 +705,16 @@ A glossary of much of the nuclear-related terminology used in this paper may be 
 
 A fission device operates on the principle that fissile materials (list of materials) will undergo fission when stuck by neutrons of sufficient kinetic energy. A nuclide which undergoes fission will release between 100-200 MeV in addition to 2-3 neutrons, which may be utilized to cause subsequent fissions in other fissile nuclei \cite{krane1987introductory}. The minimum amount of fissile material needed in order to sustain a chain reaction is known as the critical mass, which depends on the type, density, and shape of material used. A tamper, which is a high Z material which acts as a neutron reflector, is typically used in order to reduce the critical mass. 
 
+\subsection{??????? Need discussion of radioactive decay   ?????}
+
+Because of the low penetration of alpha radiation, alpha emitters only pose a health risk when ingested or inhaled \cite{CentersforDiseaseControlandPrevention}.  Protecting water and food supplies from alpha emitters is essential. 
+
+In beta decay, the electron's kinetic energy varies, with an average of 1/3 of the maximum electron energy, while the remaining energy is carried off by the nearly undetectable electron antineutrino.
+
+\subsection{??????? Need discussion of stopping power and ranges  ?????}
+
+\subsection{??????? Need discussion of dose and health physics conversions   ??????}
+
 
 
 
@@ -849,7 +859,7 @@ and \ce{^{252}Cf} \footnotemark[2] \footnotemark[4].
 %   \item \ce{^{192}Ir}
 %   \item \ce{^{241}Am} \footnote{Radioisotope undergoes decay through a chain of isotopes, including additional types of radiation emissions (e.g., combination of primary beta and secondary gamma emissions)} 
 %   \item \ce{^{238}Pu} \footnotemark[2] \footnote{Not included in this assessment due to higher level of radiological materials controls classifications for plutonium materials (e.g., HLW).} \footnote{Relative abundance or material availability is very low.}
-%   \item \ce{^{210}Po} \footnotemark[2] \footnotemark[4] \footnote{From this listing, it is possible that polonium-210 does not pose a significant threat.[3]  Additional details are provided by the CDC on polonium \cite{CentersforDiseaseControlandPrevention2014}}
+%   \item \ce{^{210}Po} \footnotemark[2] \footnotemark[4] \footnote{From this listing, it is possible that polonium-210 does not pose a significant threat.  Additional details are provided by the CDC on polonium \cite{CentersforDiseaseControlandPrevention2014}}
 %   \item \ce{^{252}Cf} \footnotemark[2] \footnotemark[4]
 % 
 % \end{itemize}
@@ -859,43 +869,35 @@ and \ce{^{252}Cf} \footnotemark[2] \footnotemark[4].
 This list is subject to scrutiny and may be modified with further research.  For now, this serves as a snapshot of commercially or industrially available materials of the most interest in this evaluation.  Accounting for relative abundance and availability, the number of  isotopes of concern is reduced from ten to seven.  The remaining isotopes can be further categorized by type of radiation emissions:
  
  
- \subsubsection{???????   Do consistent format of decay schemes - isotope, decay type, Emax, half life, decay notes ??????????}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\multicolumn{6}{|c|}{\textbf{Alpha Emitters}}                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+\textbf{Isotope}               & \textbf{Daughter} & \textbf{\begin{tabular}[c]{@{}c@{}}E\(_{max}\) of \\ \(\alpha\) particle\\ (MeV)\end{tabular}} & \textbf{Half Life} & \textbf{\begin{tabular}[c]{@{}c@{}}Secondary \\ Gammas (keV)\end{tabular}} & \textbf{Decay Notes}                                                                                                                                                                                                                              \\ \hline
+\ce{^{241}Am}                  & \ce{^{237}Np}     & 5.645                                                                                          & 432.2 yr           & 59.54                                                                      & \begin{tabular}[c]{@{}c@{}}Because of the low penetration of alpha radiation, \\ \ce{^{241}Am} only poses a health risk when \\ ingested or inhaled \cite{CentersforDiseaseControlandPrevention}.  Protecting water and food \\ supplies from \(\ce{^{241}Am}\) is essential.\end{tabular} \\ \hline
+\multicolumn{6}{|c|}{\textbf{Beta Emitters}}                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
+\textbf{Isotope}               & \textbf{Daughter} & \textbf{\begin{tabular}[c]{@{}c@{}}E\(_{max}\) of \\ \(\beta\) particle\\ (keV)\end{tabular}}  & \textbf{Half Life} & \textbf{\begin{tabular}[c]{@{}c@{}}Secondary \\ Gammas (keV)\end{tabular}} & \textbf{Decay Notes}                                                                                                                                                                                                                              \\ \hline
+\multirow{2}{*}{\ce{^{137}Cs}} & \ce{^{137m}Ba}    & 514.97                                                                                         & 30.07 yr           & -                                                                          & Stable. Occurs in only ~5\% of decays.                                                                                                                                                                                                            \\ \cline{2-6} 
+                               & \ce{^{137}Ba}     & 1175.63                                                                                        & 30.07 yr           & 661.67                                                                     & \begin{tabular}[c]{@{}c@{}}Responsible for all of the emissions of gamma \\ rays (661.67 keV) in samples of \ce{^{137}Cs} \cite{Ferguson2003,CentersforDiseaseControlandPrevention}.\end{tabular}                                                                                                     \\ \hline
+\ce{^{131}I}                   & \ce{^{131}Xe}     & 606.31                                                                                         & 8.02 d             & 364.49                                                                     & \begin{tabular}[c]{@{}c@{}}Has comparatively energetic  beta particles, \\ which penetrate 0.6 to 2.0 mm from the \\ site of uptake \cite{CentersforDiseaseControlandPrevention}.  Has a particularly high \\ radiotoxicity, but only in close contact.\end{tabular}                       \\ \hline
+\ce{^{192}Ir}                  & \ce{^{192}Pt}     & 675.12                                                                                         & 72.83 d            & \begin{tabular}[c]{@{}c@{}}1459.70\\ 612.47\\ 468.07\end{tabular}          & The 1459.7 keV is a noted identification signature \cite{CentersforDiseaseControlandPrevention}.                                                                                                                                                                                           \\ \hline
+\ce{^{90}Sr}                   & \ce{^{90}Y}       & 546.00                                                                                         & 28.79 yr           & -                                                                          & \begin{tabular}[c]{@{}c@{}}Produced by nuclear fission, can be extracted in \\ significant quantities from spent fission fuel \cite{Doyle2011}.\end{tabular}                                                                                   \\ \hline
+\ce{^{3}H}                     & \ce{^{3}He}       & 18.59                                                                                          & 12.33 yr           & -                                                                          & \begin{tabular}[c]{@{}c@{}}Beta particles from tritium can penetrate only about \\ 6.0 mm of air, and they are incapable of passing \\ through the dead outermost layer of human skin \cite{EnvironmentalHealthandSafetyOffice2013}.\end{tabular}                                          \\ \hline
+\multicolumn{6}{|c|}{\textbf{Gamma Emitters}}                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+\textbf{Isotope}               & \textbf{Daughter} & \textbf{\begin{tabular}[c]{@{}c@{}}\(\gamma\) from\\ decay (keV)\end{tabular}}                 & \textbf{Half Life} & \multicolumn{2}{c|}{\textbf{Decay Notes}}                                                                                                                                                                                                                                                                                      \\ \hline
+\ce{^{60}Co^*}                 & \ce{^{60}Co}      & 1173.24, 1332.5                                                                                & 5.27 yr            & \multicolumn{2}{c|}{\begin{tabular}[c]{@{}c@{}}The two energetic gamma emissions are \\ a noted identification signature.\end{tabular}}                                                                                                                                                                                        \\ \hline
+\end{tabular}
+}
+\caption{Decay information for radioisotopes of concern \cite{Ferguson2003,Chu1999}.}
+\label{tab:decay_table_RDD}
+\end{table}
 
-Alpha emitters
 
-Americium-241 (\ce{^{241}Am}) decays by alpha emission (5.637 MeV) with a half-life of 432.2 years, accompanied by de-excitation via gamma ray emission [10].  Because of the low penetration of alpha radiation, \ce{^{241}Am} only poses a health risk when ingested or inhaled [5].  Protecting water and food supplies from \(\ce{^{241}Am}\) is essential. 
- 
-Beta emitters
-
-Cesium-137 (137Cs) has a half-life of  30.17 years. Approximately  95 percent decays by beta (\(\beta\)) emission to \(\ce{^{137}Ba}\), a metastable  isomer. The remainder directly populates the ground state of barium-137, which is stable. Ba-137m has a half-life of about 153 seconds, and is responsible for all of the emissions of gamma rays (661.67 keV) in samples of cesium-137 [6,9,10].
-
-Iodine-131 (131I) is a \(\beta\)-emitting isotope with a half-life of eight days, and comparatively energetic (190 keV average and 606 keV maximum energy) beta radiation, which penetrates 0.6 to 2.0 mm from the site of uptake [7].  It is noted that Iodine 131 has a particularly high radiotoxicity, but only in close contact. 
-
-Iridium-192 (192Ir) is a radioactive isotope of iridium with a half-life of 73.83 days.  It decays by emitting \(\beta\) particles and gamma (\(\gamma\)) radiation.[8]  The 1459.7 keV is a noted identification signature.
-
-Strontium-90 (90Sr) is a radioactive isotope of strontium produced by nuclear fission, with a half-life of 28.8 years.  It undergoes \(\beta\)- decay into yttrium-90, with a decay energy of 546 keV.[9][10]
-
-Tritium - Hydrogen-3 (3H) is a radioactive isotope of hydrogen with a half-life of 4,500 days, and it releases 18.6 keV of energy in the process of emitting \(\beta\) particles. The electron's kinetic energy varies, with an average of 5.7 keV, while the remaining energy is carried off by the nearly undetectable electron antineutrino.  Beta particles from tritium can penetrate only about 6.0 mm of air, and they are incapable of passing through the dead outermost layer of human skin.[11]
- 
-Gamma emitters
-
-Cobalt-60, has a unique signature in the release of two energetic gamma emissions (1173.24 and 1332.5 keV).[10]
-
-Cesium-137 (Decay to Barium 137m, and its subsequent decay to Barium 137 causes delayed secondary emission gammas at 80.9, 276.4, 302.9, 356.02, and 383.85 keV)[10],
-
-Iridium-192 (192Ir) is a radioisotope with a half-life of 73.83 days, it decays emitting \(\gamma\) radiation.[8]  The 1459.7 keV is a noted identification signature.
-
-
-
-References
-[4] 	Ferguson, C.D., Kazi, T. and Perera J. (2003) Commercial Radioactive Sources: Surveying the Security Risks, Monterey Institute of International Studies, Center for Nonproliferation Studies, Occasional Paper 11, ISBN 1-885350-06-6.
-[5]	CDC on Americium. \url{http://www.bt.cdc.gov/radiation/isotopes/americium.asp}
-[6]	CDC on Cesium.  \url{http://www.bt.cdc.gov/radiation/isotopes/cesium.asp}
-[7]	CDC on Iodine.  \url{http://www.bt.cdc.gov/radiation/isotopes/iodine.asp}
-[8]	CDC on Iridium.  \url{http://www.bt.cdc.gov/radiation/isotopes/iridium.asp}
-[9]	CDC on Strontium.  \url{http://www.bt.cdc.gov/radiation/isotopes/strontium.asp}
-[10] 	S.Y.F. Chu, L.P. Ekström, and R.B. Firestone, The Lund/LBNL Nuclear Data Search, v. 2.0, Feb. 1999, \url{http://nucleardata.nuclear.lu.se/nucleardata/toi/}.
-[11]	Emory University. Environmental Health and Safety Office. Nuclide Safety Data Sheet Hydrogen-3 [Tritium]. \url{http://www.ehso.emory.edu/content-forms/3anuclidedatasafetysheets.pdf}
 
 
 
@@ -1793,6 +1795,11 @@ Combining these classification categories, a set of information and its sensitiv
 \subsection{International Intelligence Sharing}
 
 Information sharing in the international IC is immensely more complicated than between internal U.S. agencies. The mere fact of declared opposition to ISIL is an insufficient basis for intelligence sharing alone.  Indeed, the U.S. various strained relationships with many allies in the fight against ISIL. It is assumed that information sharing on the ISIL issue would fall along lines consistent with historical cooperation levels. Cooperation levels can be divided into a simple system of three levels as shown in \autoref{tab:relation_table}.
+
+\subsection{??????? Add in Ref 10 below from Bushra  ???????}
+
+\subsection{?????? Need better ref 11 below ????????}
+
 
 \begin{table}[h]
 \centering
