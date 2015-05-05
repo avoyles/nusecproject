@@ -381,6 +381,8 @@ elit.}
 
 AAPA - American Association of Port Authorities
 
+ALARA - As Low As Reasonably Achievable
+
 AQI -  al-Qaeda in Iraq
 
 ASP - Advanced Spectroscopic Portal Monitor
@@ -710,7 +712,7 @@ A glossary of much of the nuclear-related terminology used in this paper may be 
 
 Atoms are essentially a dense core of protons and neutrons surrounded by an electron cloud. The neutrons and protons in the nucleus (atomic core) are also known as nucleons, collectively \cite{krane1987introductory}. For the purposes of this report, a complete understanding of the atomic structure is not necessary. However, what should be understood is the difference between an element and an isotope, and how to determine what element and isotope an atom is based on its nuclear composition. 
 
-Within the nucleus, the number of protons defines what element an atom is. For example, an atom with six protons is a carbon atom, and an atom with ninety two protons is a uranium atom. The number of total nucleons, or the number of protons and neutrons combined, defines the isotope of the element that the atom is \cite{krane1987introductory}. For example, a carbon atom with six neutrons has twelve nucleons, and is known as a \ce{^{12}C} atom. A uranium atom with one hundred and forty three neutrons has two hundred and thirty five nucleons, and is known as \ce{^{235}U}, an important element in nuclear science and for many nuclear weapons. It is interesting to note that different isotopes of the same element can behave significantly differently. An excellent example of this is that \ce{^{235}U} readily fissions in nuclear reactors and weapons, but \ce{^{238}U} only reliably fissions under specific conditions, and therefore is not a useful fuel in nuclear weapons \cite{krane1987introductory,Duderstadt1976}. 
+Within the nucleus, the number of protons (Z) defines what element an atom is. For example, an atom with six protons is a carbon atom, and an atom with ninety two protons is a uranium atom. The number of total nucleons (A), or the number of protons and neutrons combined, defines the isotope of the element that the atom is \cite{krane1987introductory}. For example, a carbon atom with six neutrons has twelve nucleons, and is known as a \ce{^{12}C} atom. A uranium atom with one hundred and forty three neutrons has two hundred and thirty five nucleons, and is known as \ce{^{235}U}, an important element in nuclear science and for many nuclear weapons. It is interesting to note that different isotopes of the same element can behave significantly differently. An excellent example of this is that \ce{^{235}U} readily fissions in nuclear reactors and weapons, but \ce{^{238}U} only reliably fissions under specific conditions, and therefore is not a useful fuel in nuclear weapons \cite{krane1987introductory,Duderstadt1976}. 
 
 
 \subsection{Fission}
@@ -776,19 +778,63 @@ Gamma decay allows nuclei with a high-energy internal configuration of their nuc
 
 
 
-\subsection{??????? Need discussion of stopping power and ranges  ?????}
+\subsection{Radiation Interactions with Matter}
+
+A full explanation of the physics of how radiation interacts with matter is beyond the scope of this summary; the important takeaways for a good understanding of the basic physics involved with nuclear weapons are presented here instead. All radiation interacts with matter by electromagnetic interactions between the radiation and the atoms in the matter; the range of radiation in matter is based on the energy and type of radiation, as well as the composition of the matter \cite{krane1987introductory}. 
+
+Charged particles, like alpha particles, interact with the atomic electron clouds of matter, and travel very nearly in straight lines. Due their large mass and charge, alpha particles travel a very short distance before they spend all of their energy, locally depositing nearly all of it as they are stopped \cite{krane1987introductory}. A cm of most materials is sufficient to stop most alpha particles; they can be shielded by 2 cm of air, or even 1 mm of human tissue \cite{Cember2008}. Because of the low penetration of alpha radiation, external alpha sources do not pose a risk to humans; alpha emitters only pose a health risk when ingested or inhaled \cite{CentersforDiseaseControlandPrevention}.  Protecting water and food supplies from alpha emitters is thus essential. 
+
+
+Beta particles primarily interact with the nuclei of the material in which they travel. As a result, beta particles travel a little farther than alpha particles, but also in much more random paths, depositing their energy more broadly. This also makes their range much harder to estimate, as it can span anywhere from a few mm to hundreds of cm \cite{krane1987introductory}. A helpful rule-of-thumb for estimating the shielding thickness (of a material of density \(\rho\)) for electrons of energy \(E_{max}\) is known as Feather's Rule \cite{Stabin2007}:
+
+\begin{equation}
+ \text{Range} (cm) = \dfrac{E_{max}(MeV)}{2\ \rho (g/cm^3)}
+\end{equation}
+
+One complication which arises when shielding beta particles (but is not seen for shielding alpha particles, due to their straight tracks as they slow down) is the emission of a high-energy type of x-ray called \enquote{bremsstrahlung} (German for \enquote{braking radiation}) \cite{Cherry2012}. It results from the larger-angle deflections beta particles undergo as they slow down, and is proportional to the Z\(^2\) of the shielding material \cite{krane1987introductory}. Thus, while many of the dense, high-Z materials make very efficient shields against beta particles, they would produce a large amount of bremsstrahlung, creating a potentially larger radiation hazard than the original beta particles. For this reason, high-density plastics are often used as shielding against beta particles, due to their high density, but low Z \cite{Cember2008}. In addition to being an external radiation hazard, beta emitters are an internal hazard as well; protecting water and food supplies from beta emitters is thus essential \cite{CentersforDiseaseControlandPrevention}. 
+
+
+Gamma rays are not stopped in a similar manner to alpha or beta particles, because they are a type of electromagnetic wave. Gamma rays are instead attenuated through matter - the initial gamma ray loses strength exponentially as it passes through matter, depositing the energy it loses along its path \cite{krane1987introductory}. Dense materials are better at attenuating gamma rays; large thicknesses of materials such as lead and concrete are thus common shields against gamma emitters \cite{Stabin2007}. 
+
+Neutrons are heavy, uncharged particles and thus behave similarly yet differently from the above radiation forms. Due to being uncharged, neutrons are considerably more penetrating than alpha and beta particles, and thus will not be slowed down by interactions with nuclei or atomic electron clouds in matter. However, because neutrons have mass they have many collisions in dense matter such as water or human tissues and excite the atoms they collide with, which causes further interactions as these atoms de-excite and/or interact with further atoms \cite{krane1987introductory}. 
 
 
 
-Because of the low penetration of alpha radiation, alpha emitters only pose a health risk when ingested or inhaled \cite{CentersforDiseaseControlandPrevention}.  Protecting water and food supplies from alpha emitters is essential. 
-
-
-\subsection{??????? Need discussion of dose and health physics conversions   ??????}
-
-Missing...
+ 
+ For more discussion, \autoref{sec:shielding_mat} also explains the range of the different forms of radiation in matter well, through the context of shielding.
 
 
 
+
+\subsection{Health Physics}
+
+When high-energy radiation of any form interacts with matter (as described above) it deposits some or all of its energy, which ionizes the atoms in the matter. Ionization is the removal of one or more electrons from the atom, which go on to interact chemically and physically with other atoms \cite{krane1987introductory}. These additional reactions, when present in human tissue, can disrupt existing chemical structures and cause a loss of functionality or genetic mutation, which in extreme cases can lead to cell death or the onset of cancer \cite{Stabin2007}. 
+
+Health effects from irradiation of tissues are generally correlated with the energy deposited by the radiation as well as the density of ionization they produce. This absorbed dose is measured in Gray (Gy), where 1 Gray is the dose resulting from depositing 1 J of energy into 1 kg of mass. Another common unit of absorbed dose is the rad, where 1 Gy = 100 rad \cite{Stabin2007}.
+
+
+Further, since different types of radiation deposit their energy through different means and over different ranges, radiation damage is also weighted by the type of radiation causing the damage \cite{Cherry2012}. To normalize the dose from some type of radiation, the absorbed dose (in Gy) is multiplied by a quality factor, \(Q\), yielding a dose equivalent (in rem). The rem is a very large quantity of dose equivalent; a more common unit is the millirem (mrem), where 1000 mrem = 1 rem, or the milli-Sievert (mSv), where 10 mSv = 1 rem \cite{Cember2008}. For reference, the average person annually receives approximately 620 mrem of dose, due to a natural level of background radioactivity, as well medical and commercial sources of radiation \cite{U.S.NuclearRegulatoryCommission2014}. Larger quality factors indicate that a particular type of radiation is more damaging to the body than a type of radiation with a smaller quality factor; such quality factors can be seen in \autoref{tab:quality_factors} \cite{Cember2008}.
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Radiation Type}}                                                                                                       & \multicolumn{1}{c|}{\textbf{Quality Factor, Q}}              \\ \hline
+Gamma rays, X-rays                                                                                                                                  & 1                                                            \\ \hline
+Electrons, beta particles                                                                                                                           & 1                                                            \\ \hline
+\begin{tabular}[c]{@{}l@{}}Neutrons:\\ \textless 10 keV\\ 10 keV to 100 keV\\ 100 keV to 2 MeV\\ 2 MeV to 20 MeV\\ \textgreater 20 MeV\end{tabular} & \begin{tabular}[c]{@{}l@{}}\ \\ 5\\ 10\\ 20\\ 10\\ 5\end{tabular} \\ \hline
+Protons                                                                                                                                             & 10                                                           \\ \hline
+Alpha particles, fission fragments, heavy ions                                                                                                      & 20                                                           \\ \hline
+\end{tabular}
+\caption{Quality factors for various types of radiation \cite{U.S.NuclearRegulatoryCommission2014}.}
+\label{tab:quality_factors}
+\end{table}
+
+
+Since radiation dose is not known to have many positive health effects (apart from uses in medical imaging and cancer therapy), it is generally advised to minimize one's exposure to radiation sources. This policy is referred to as ALARA - keeping personal dose \enquote{As Low As Reasonably Achievable} within the context of use for a particular radiation source \cite{Cember2008}. ALARA is generally implemented by minimizing time of exposure to a source, maximizing distance from the source, and using reasonable levels of shielding around the source \cite{Cherry2012}. Distance from a source can be easily implemented, as most radiation sources follow an \textit{inverse square law} - the intensity of a radiation falls off with the square of the distance from the source. For example, doubling one's distance from a source will reduce one's exposure by a factor of 4 \cite{Stabin2007}.
+
+One final important consideration in the health effects of radiation dose is the dose rate - the timescale over which one receives a particular dose, typically measured in mrem/hr. In general, the human body is better able to handle even large total doses when applied over the course of a few weeks \cite{Stabin2007}. Thus, dose rate is generally a more useful metric of the risk of a particular radiation source \cite{Cherry2012}. The effect of many doses over various exposure times can be seen in \autoref{tab:health_effects}.
 
 
 
@@ -877,7 +923,7 @@ The effect of such a device will depend on the type of radioactive material used
 
 
  
-\footnotetext{Unit Conversions: 1 rem = 1 rad = 10 millisievert (mSv) = 0.01 sievert (Sv) = 1150 milliroentgen (mR).}
+\footnotetext{Unit Conversions: 1 rem = 10 millisievert (mSv) = 0.01 sievert (Sv) = 1150 milliroentgen (mR).}
 
 
 
@@ -1295,7 +1341,7 @@ For passive detection of radiological materials, including isotope identificatio
 
 
  
-\subsubsection{Shielding of Radioactive Materials}
+\subsubsection{Shielding of Radioactive Materials}  \label{sec:shielding_mat}
 
 \subsubsection{????????  This section needs MASSIVE cleaning up ????????}
 
