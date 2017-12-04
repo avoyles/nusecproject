@@ -1,66 +1,80 @@
 \documentclass{report}
 
 
-
+% Language and localization setup
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \input{ix-utf8enc.dfu}
-\usepackage{graphicx}
-% \usepackage{svg}
 
-% \usepackage[colorinlistoftodos]{todonotes}
+% Add graphics support
+\usepackage{graphicx}
+\usepackage{fixltx2e}
+
+
+% Add table support
 \usepackage{float}
 \usepackage{multirow}
 \usepackage[table,xcdraw]{xcolor}
 
+% Add caption support
 \usepackage{caption}  % Use for \captionof(*) command
 \usepackage{subcaption}
+
+% Insertion of whole PDF pages into document
 \usepackage{pdfpages}
-
-
 \usepackage{pdflscape}
 \usepackage{afterpage}
 
-
+% Add robust list support
 \usepackage[ampersand]{easylist}
 
-
-
-
-
-% \usepackage{authblk}
-% 
-% 
+% Change section titles
 \usepackage{titlesec}
 
+% Add ToC entries down to X.X.X.X level
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{3}
 
-
+% Adds pretty boxes around chapter headings
 \usepackage[Glenn]{fncychap}
 
 % \usepackage[sorting=none]{biblatex}
 
-
+% Adds in support for multiple page styles
 \usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% Adds header, footer, and footnote support
 \usepackage{extramarks}
+
+% Extra math capabilities and symbols
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
-\usepackage{parskip}
-\usepackage[version=3]{mhchem} 
-\usepackage{fixltx2e}
-\usepackage{refcount}
-\usepackage{siunitx}
-\usepackage{lastpage}
 \usepackage{textcomp}
 \usepackage{xfrac}
-\usepackage{lmodern}
-\usepackage[hidelinks]{hyperref}
 \usepackage{cool}
 \usepackage{cancel}
-\usepackage{microtype}
 \usepackage{gensymb}
+
+% Control line and paragraph spacing
+\usepackage{parskip}
+
+% Chemical and isotope notation
+\usepackage[version=3]{mhchem} 
+
+% Adds cross-references and labeling
+\usepackage{refcount}
+\usepackage[hidelinks]{hyperref}
+
+% Define units
+\usepackage{siunitx}
+
+% Font control
+\usepackage{lmodern}
+\usepackage{microtype}
+
+
 
 % \usepackage{natbib}
 \usepackage{etoolbox}
@@ -103,9 +117,6 @@
   \rfoot{\thepage}
   \renewcommand{\headrulewidth}{0.4pt}
   \renewcommand{\footrulewidth}{0.4pt}
-
-%   \renewcommand{\chaptermark}[1]{%
-%   \markboth{#1}{}}
 }
 
 \fancypagestyle{fancyacronym}{
@@ -117,9 +128,6 @@
   \rfoot{\thepage}
   \renewcommand{\headrulewidth}{0.4pt}
   \renewcommand{\footrulewidth}{0.4pt}
-
-%   \renewcommand{\chaptermark}[1]{%
-%   \markboth{#1}{}}
 }
 
 \fancypagestyle{fancy2}{
@@ -133,9 +141,6 @@
   \rfoot{\thepage}
   \renewcommand{\headrulewidth}{0.4pt}
   \renewcommand{\footrulewidth}{0.4pt}
-
-%   \renewcommand{\chaptermark}[1]{%
-%   \markboth{#1}{}}
 }
 
 
@@ -164,68 +169,7 @@
 
 
 %
-% Create Problem Sections
-%
-
-% \newcommand{\enterProblemHeader}[1]{
-%     \nobreak\extramarks{}{Problem \arabic{#1} continued on next 
-% page\ldots}\nobreak{}
-%     \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} 
-% continued on next page\ldots}\nobreak{}
-% }
-% 
-% \newcommand{\exitProblemHeader}[1]{
-%     \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} 
-% continued on next page\ldots}\nobreak{}
-%     \stepcounter{#1}
-%     \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
-%     
-% }
-% 
-% \setcounter{secnumdepth}{0}
-% \newcounter{partCounter}
-% \newcounter{homeworkProblemCounter}
-% \setcounter{homeworkProblemCounter}{1}
-% \nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
-
-%
-% Homework Problem Environment
-%
-% This environment takes an optional argument. When given, it will adjust the
-% problem counter. This is useful for when the problems given for your
-% assignment aren't sequential. See the last 3 problems of this template for an
-% example.
-%
-% \newenvironment{homeworkProblem}[1][-1]{
-%     \ifnum#1>0
-% 	\setcounter{homeworkProblemCounter}{#1}
-%     \fi
-% %     \section{Problem \arabic{homeworkProblemCounter}}
-%     \setcounter{partCounter}{1}
-%     \enterProblemHeader{homeworkProblemCounter}
-% }{
-%     \exitProblemHeader{homeworkProblemCounter}
-%     \pagebreak
-% 
-% }
-
-%
-% Homework Details
-%   - Title
-%   - Due date
-%   - Class
-%   - Instructor
-%   - Author
-%
-% 
-% \newcommand{\hmwkTitle}{Homework\ \# 09}
-% \newcommand{\hmwkDueDate}{16 April 2015}
-% \newcommand{\hmwkClass}{NE 150}
-% \newcommand{\hmwkClassInstructor}{Professor Max Fratoni}
-% \newcommand{\hmwkAuthorName}{Andrew S Voyles}
-
-%
-% Title Page
+% Define Title Page content
 %
 
 \title{Preventing a Nuclear ISIL: \\Recommendations for United States Policy}
